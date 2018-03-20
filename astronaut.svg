@@ -311,6 +311,8 @@
                 keyTimes="0;0.2;0.9;1"
                 dur=".6s"
                 begin="planetJump.end+6s;jump.end+7s"
+                end=".6s"
+                fill="remove"
               />
               <circle cx="111.231" cy="12.196" r="2.044" fill="#00599f"/>
               <circle cx="107.952" cy="11.914" r="2.044" fill="#00599f"/>
