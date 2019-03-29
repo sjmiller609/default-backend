@@ -1,0 +1,7 @@
+exclude_patterns:
+  - "src/lib/generated/**"
+  - "src/**/*.test.js"
+checks:
+  method-lines:
+    config:
+      threshold: 50
