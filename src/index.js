@@ -32,7 +32,7 @@ app.get("*", function(req, res) {
   if (code && includes(ingress, "airflow-ingress")) {
     return res
       .status(code)
-      .sendFile(`${__dirname}/static/airflow-${code}.html`);
+      .sendFile(`${__dirname}/static/airflow/${code}.html`);
   }
 
   // Default back to standard 404 page.
