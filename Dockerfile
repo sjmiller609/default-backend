@@ -21,8 +21,8 @@ COPY package.json package.json
 RUN apk update \
 	&& apk add --no-cache --virtual .build-deps \
 		build-base \
-		python \
 		git \
+		python \
 	&& apk add --no-cache \
 		bash \
 		netcat-openbsd \
