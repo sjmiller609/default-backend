@@ -4,6 +4,8 @@
   "description": "Default backend for the Astronomer Platform",
   "main": "index.js",
   "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "serve": "node dist/index.js",
     "start": "nodemon --exec babel-node -e js src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
