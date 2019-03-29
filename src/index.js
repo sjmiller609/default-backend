@@ -24,8 +24,6 @@ app.get("/healthz", function(req, res) {
 // Set up the default route.
 // All requests are sent here from the ingress controller.
 app.get("*", function(req, res) {
-  console.log(req.headers);
-
   // Get some headers.
   const code = req.get("x-code");
   const ingress = req.get("x-ingress-name");
